@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Flex, Box, Text, Button } from "@chakra-ui/react"
+import Head from "next/head"
 
 import { baseUrl, fetchApi } from "@/utils/fetchApi"
 import Property from "@/components/Property"
@@ -25,6 +26,9 @@ export default function Home({ propertyForRent, propertyForSale }) {
 
   return (
     <>
+    <Head>
+    <title>Realtor</title>
+    </Head>
       <Box>
       <Banner
         purpose="RENT A HOME"

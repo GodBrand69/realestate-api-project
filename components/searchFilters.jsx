@@ -6,7 +6,7 @@ import { MdCancel } from "react-icons/md"
 import { filterData, getFilterValues } from "@/utils/filterData";
 
 
-const searchFilters = () => {
+const SearchFilters = () => {
     const [filters, setFilters] = useState(filterData);
     const router = useRouter();
 
@@ -44,4 +44,4 @@ const searchFilters = () => {
 
 }
 
-export default searchFilters;
+export default SearchFilters;
